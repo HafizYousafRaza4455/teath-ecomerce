@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-50: #eefcfa;
+  --color-brand-100: #d5f7f2;
+  --color-brand-200: #aeefe9;
+  --color-brand-300: #79e2db;
+  --color-brand-400: #3fcfc7;
+  --color-brand-500: #1db5ae;
+  --color-brand-600: #0f938f;
+  --color-brand-700: #0e7773;
+  --color-brand-800: #0f5f5c;
+  --color-brand-900: #0e4f4d;
+
+  --color-accent-400: #fbbf6e;
+  --color-accent-500: #f59e2e;
+  --color-accent-600: #d97d10;
+}
+
+html { scroll-behavior: smooth; }
+
+body { font-family: var(--font-sans); }
+
+.font-display { font-family: var(--font-display); }
+
+/* Subtle entrance animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up { animation: fadeUp 0.5s ease-out both; }
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animate-pop-in { animation: popIn 0.25s ease-out both; }
+
+/* Hide scrollbar utility for category chips row */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
