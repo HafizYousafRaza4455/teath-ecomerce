@@ -66,7 +66,6 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/account" element={<Account />} />
-            <Route path="*" element={<div className="py-24 text-center text-gray-400 font-medium">404 — Page not found</div>} />
           </Route>
 
           {/* Completely Isolated Admin Portal (No Customer Navbar or Footer) */}
@@ -78,6 +77,11 @@ function App() {
             <Route path="products" element={<AdminProducts />} />
             <Route path="customers" element={<AdminCustomers />} />
             <Route path="coupons" element={<AdminCoupons />} />
+          </Route>
+
+          {/* Global Fallback 404 */}
+          <Route path="*" element={<StoreLayout />}>
+            <Route path="*" element={<div className="py-24 text-center text-gray-400 font-medium">404 — Page not found</div>} />
           </Route>
         </Routes>
       </BrowserRouter>

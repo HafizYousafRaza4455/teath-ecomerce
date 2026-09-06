@@ -44,8 +44,13 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t border-gray-800/60 py-5 text-center text-xs text-gray-600">
-        © {new Date().getFullYear()} SparkleSmile. All rights reserved. · Privacy · Terms
+      <div className="border-t border-gray-800/60 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500 max-w-7xl mx-auto px-4">
+        <div>© {new Date().getFullYear()} SparkleSmile. All rights reserved. · Privacy · Terms</div>
+        <div>
+          <Link to="/admin/login" className="text-gray-400 hover:text-brand-400 transition flex items-center gap-1">
+            <span>🔐</span> Admin Portal
+          </Link>
+        </div>
       </div>
     </footer>
   )
