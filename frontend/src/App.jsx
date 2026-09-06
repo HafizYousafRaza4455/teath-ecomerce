@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 import { ToastHost } from './components/Toast'
 import ErrorBoundary from './components/ErrorBoundary'
 import { useAuthStore } from './store/auth'
@@ -53,6 +54,7 @@ function App() {
   return (
     <ErrorBoundary>
       <BrowserRouter>
+        <ScrollToTop />
         <ToastHost />
         <Routes>
           {/* Public Storefront Routes with Customer Navigation & Footer */}

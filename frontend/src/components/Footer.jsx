@@ -30,6 +30,11 @@ export default function Footer() {
             <li><Link to="/contact" className="hover:text-white transition">Contact Us</Link></li>
             <li><Link to="/account" className="hover:text-white transition">Track Order</Link></li>
             <li><Link to="/account" className="hover:text-white transition">My Account</Link></li>
+            <li>
+              <Link to="/admin/login" className="text-brand-400 hover:text-brand-300 font-semibold flex items-center gap-1 transition">
+                <span>🔐</span> Admin Portal
+              </Link>
+            </li>
           </ul>
         </div>
         <div>

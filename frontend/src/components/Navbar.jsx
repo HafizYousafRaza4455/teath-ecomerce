@@ -42,6 +42,12 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2.5">
+          <Link
+            to="/admin/login"
+            className="hidden lg:inline-flex items-center gap-1.5 bg-gray-950 text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-gray-800 transition shadow-sm border border-gray-800"
+          >
+            <span>🔐</span> Admin
+          </Link>
           {user ? (
             <>
               <Link to="/account" className="hidden sm:block text-sm font-semibold text-gray-700 hover:text-brand-600 max-w-40 truncate">
@@ -79,6 +85,9 @@ export default function Navbar() {
               {label}
             </NavLink>
           ))}
+          <NavLink to="/admin/login" onClick={() => setOpen(false)} className="block px-3 py-2.5 rounded-xl text-sm font-bold text-gray-900 bg-gray-100 flex items-center gap-2">
+            <span>🔐</span> Admin Portal
+          </NavLink>
           {user ? (
             <>
               <NavLink to="/account" onClick={() => setOpen(false)} className="block px-3 py-2.5 rounded-xl text-sm font-medium text-gray-600 hover:bg-gray-50">My Account</NavLink>
