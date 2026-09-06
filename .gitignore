@@ -23,6 +23,7 @@ diag/
 .vscode/
 .idea/
 .DS_Store
+.agents/
 
 # Environment variables
 .env
