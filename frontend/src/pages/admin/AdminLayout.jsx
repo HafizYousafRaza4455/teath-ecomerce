@@ -30,12 +30,12 @@ export default function AdminLayout() {
           🔐
         </div>
         <h2 className="font-display text-2xl font-extrabold text-gray-900">Admin Login Required</h2>
-        <p className="text-gray-400 text-sm mt-2">Please log in with an administrator account to continue.</p>
+        <p className="text-gray-400 text-sm mt-2">Please log in with your administrator credentials to access this control suite.</p>
         <Link
-          to="/login"
+          to="/admin/login"
           className="mt-6 inline-block bg-brand-600 text-white px-10 py-3.5 rounded-full font-bold hover:bg-brand-700 transition shadow-lg shadow-brand-200"
         >
-          Log In
+          Go to Admin Sign In →
         </Link>
       </div>
     )
@@ -46,6 +46,7 @@ export default function AdminLayout() {
     { to: 'orders', icon: '📦', label: 'Orders' },
     { to: 'products', icon: '🧴', label: 'Products' },
     { to: 'customers', icon: '👥', label: 'Customers' },
+    { to: 'coupons', icon: '🏷️', label: 'Coupons' },
   ]
 
   const userInitial = user.first_name ? user.first_name[0].toUpperCase() : (user.email ? user.email[0].toUpperCase() : 'A')
