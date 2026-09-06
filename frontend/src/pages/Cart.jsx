@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useCartStore } from '../store/cart'
 import { toast } from '../components/Toast'
+import { getProductImage } from '../utils/productImages'
 
 export default function Cart() {
   const { cart, coupon, updateItem, removeItem, applyCoupon, clearCoupon } = useCartStore()
@@ -63,8 +64,12 @@ export default function Cart() {
         <div className="lg:col-span-2 space-y-4">
           {cart.items.map((item) => (
             <div key={item.id} className="bg-white border border-gray-100 rounded-3xl p-5 flex items-center gap-5 hover:shadow-md transition-shadow">
-              <Link to={`/product/${item.product.slug}`} className="w-24 h-24 bg-gradient-to-br from-brand-50 to-brand-100/70 rounded-2xl flex items-center justify-center text-4xl shrink-0">
-                🦷
+              <Link to={`/product/${item.product.slug}`} className="w-24 h-24 bg-gray-50 rounded-2xl overflow-hidden shrink-0 border border-gray-100 flex items-center justify-center">
+                <img
+                  src={getProductImage(item.product)}
+                  alt={item.product.name}
+                  className="w-full h-full object-cover"
+                />
               </Link>
               <div className="flex-1 min-w-0">
                 <Link to={`/product/${item.product.slug}`} className="font-display font-bold text-gray-900 hover:text-brand-600 leading-snug">

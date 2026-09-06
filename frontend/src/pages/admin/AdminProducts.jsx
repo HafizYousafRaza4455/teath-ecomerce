@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { admin } from '../../api'
+import { getProductImage } from '../../utils/productImages'
 
 const EMPTY = {
   name: '', description: '', price: '', discount_price: '', stock: 0,
@@ -83,7 +84,16 @@ export default function AdminProducts() {
           <tbody>
             {products.map((p) => (
               <tr key={p.id} className="border-t border-gray-50 hover:bg-gray-50/50">
-                <td className="px-4 py-3 font-semibold text-gray-900">{p.name}</td>
+                <td className="px-4 py-3 font-semibold text-gray-900">
+                  <div className="flex items-center gap-3">
+                    <img
+                      src={getProductImage(p)}
+                      alt={p.name}
+                      className="w-10 h-10 rounded-xl object-cover border border-gray-100 shrink-0"
+                    />
+                    <span>{p.name}</span>
+                  </div>
+                </td>
                 <td className="px-4 py-3 text-gray-500">{p.category_name}</td>
                 <td className="px-4 py-3">
                   ${Number(p.effective_price).toFixed(2)}

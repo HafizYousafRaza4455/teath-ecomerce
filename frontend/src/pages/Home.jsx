@@ -49,8 +49,12 @@ export default function Home() {
           </div>
           <div className="hidden md:flex justify-center animate-fade-up" style={{ animationDelay: '0.15s' }}>
             <div className="relative">
-              <div className="w-[340px] h-[340px] bg-gradient-to-br from-brand-400 to-brand-600 rounded-[48px] rotate-6 flex items-center justify-center shadow-2xl shadow-brand-300/60">
-                <span className="text-[150px] -rotate-6">😁</span>
+              <div className="w-[340px] h-[340px] rounded-[48px] rotate-6 overflow-hidden shadow-2xl shadow-brand-300/60 border-4 border-white bg-brand-100">
+                <img
+                  src="/images/hero-smile.jpg"
+                  alt="Bright smile results"
+                  className="w-full h-full object-cover -rotate-6 scale-125"
+                />
               </div>
               <div className="absolute -top-4 -left-8 bg-white rounded-2xl px-5 py-3 shadow-xl animate-pop-in">
                 <div className="text-xs text-gray-400 font-medium">Shade improvement</div>
@@ -147,15 +151,15 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            ['Coffee drinker for 10 years — after one week of the Pro Kit, my teeth are 4 shades whiter. Absolutely incredible.', 'Sarah M.', 'Verified Buyer'],
-            ['I was skeptical, but the LED light + gel combo genuinely works. Zero sensitivity, which shocked me.', 'James T.', 'Verified Buyer'],
-            ['The whitening pen is perfect for touch-ups before events. It lives in my purse now!', 'Priya K.', 'Verified Buyer'],
-          ].map(([q, n, b], i) => (
+            ['Coffee drinker for 10 years — after one week of the Pro Kit, my teeth are 4 shades whiter. Absolutely incredible.', 'Sarah M.', 'Verified Buyer', '/images/smile-1.jpg'],
+            ['I was skeptical, but the LED light + gel combo genuinely works. Zero sensitivity, which shocked me.', 'James T.', 'Verified Buyer', '/images/smile-2.jpg'],
+            ['The whitening pen is perfect for touch-ups before events. It lives in my purse now!', 'Priya K.', 'Verified Buyer', '/images/smile-3.jpg'],
+          ].map(([q, n, b, avatar], i) => (
             <div key={n} className="bg-white border border-gray-100 rounded-3xl p-7 shadow-sm hover:shadow-md transition-shadow animate-fade-up" style={{ animationDelay: `${i * 100}ms` }}>
               <div className="text-accent-500 mb-3 tracking-widest">★★★★★</div>
               <p className="text-gray-700 text-[15px] leading-relaxed">“{q}”</p>
               <div className="flex items-center gap-3 mt-6">
-                <div className="w-9 h-9 rounded-full bg-brand-100 flex items-center justify-center font-bold text-brand-700 text-sm">{n[0]}</div>
+                <img src={avatar} alt={n} className="w-10 h-10 rounded-full object-cover border-2 border-brand-200 shrink-0" />
                 <div>
                   <div className="text-sm font-bold text-gray-900">{n}</div>
                   <div className="text-[11px] text-gray-400">{b}</div>

@@ -1,0 +1,30 @@
+# Node
+node_modules/
+dist/
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+.venv/
+env/
+*.sqlite3
+
+# Logs & temp
+*.log
+logs/
+diag/
+
+# Vercel & IDE
+.vercel
+.vscode/
+.idea/
+.DS_Store
+
+# Environment variables
+.env
+.env.*
+!.env.example

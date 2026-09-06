@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { getProductImage } from '../utils/productImages'
 
 export function Stars({ rating, size = 'text-sm' }) {
   return (
@@ -12,29 +13,25 @@ export function Stars({ rating, size = 'text-sm' }) {
   )
 }
 
-const categoryEmoji = {
-  'Whitening Kits': '🧰',
-  'LED Lights': '💡',
-  'Whitening Strips': '🪥',
-  'Gels & Pens': '🧴',
-  'Accessories': '✨',
-}
-
 export default function ProductCard({ product }) {
   const onSale = product.discount_price !== null && product.discount_price !== undefined
   const off = onSale ? Math.round((1 - product.effective_price / product.price) * 100) : 0
+  const imageUrl = getProductImage(product)
 
   return (
     <Link
       to={`/product/${product.slug}`}
-      className="group bg-white rounded-3xl border border-gray-100 overflow-hidden hover:shadow-xl hover:shadow-brand-100/50 hover:-translate-y-1 transition-all duration-300"
+      className="group bg-white rounded-3xl border border-gray-100 overflow-hidden hover:shadow-xl hover:shadow-brand-100/50 hover:-translate-y-1 transition-all duration-300 flex flex-col"
     >
-      <div className="aspect-square bg-gradient-to-br from-brand-50 to-brand-100/70 flex items-center justify-center relative">
-        <span className="text-7xl group-hover:scale-110 transition-transform duration-300 drop-shadow-sm">
-          {categoryEmoji[product.category_name] || '🦷'}
-        </span>
+      <div className="aspect-square bg-gray-50 flex items-center justify-center relative overflow-hidden">
+        <img
+          src={imageUrl}
+          alt={product.name}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          loading="lazy"
+        />
         {onSale && (
-          <span className="absolute top-3 left-3 bg-red-500 text-white text-[11px] font-extrabold px-2.5 py-1 rounded-full">
+          <span className="absolute top-3 left-3 bg-red-500 text-white text-[11px] font-extrabold px-2.5 py-1 rounded-full shadow-sm">
             -{off}%
           </span>
         )}

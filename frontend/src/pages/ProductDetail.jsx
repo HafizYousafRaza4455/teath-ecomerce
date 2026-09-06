@@ -5,8 +5,7 @@ import { useAuthStore } from '../store/auth'
 import { useCartStore } from '../store/cart'
 import { Stars } from '../components/ProductCard'
 import { toast } from '../components/Toast'
-
-const catEmoji = { 'Whitening Kits': '🧰', 'LED Lights': '💡', 'Whitening Strips': '🪥', 'Gels & Pens': '🧴', 'Accessories': '✨' }
+import { getProductImage } from '../utils/productImages'
 
 export default function ProductDetail() {
   const { slug } = useParams()
@@ -67,10 +66,14 @@ export default function ProductDetail() {
       </nav>
 
       <div className="grid md:grid-cols-2 gap-12">
-        <div className="aspect-square bg-gradient-to-br from-brand-50 to-brand-100/70 rounded-[36px] flex items-center justify-center relative animate-fade-up">
-          <span className="text-[150px] drop-shadow-sm">{catEmoji[product.category_name] || '🦷'}</span>
+        <div className="aspect-square bg-gray-50 rounded-[36px] overflow-hidden flex items-center justify-center relative animate-fade-up shadow-sm border border-gray-100">
+          <img
+            src={getProductImage(product)}
+            alt={product.name}
+            className="w-full h-full object-cover"
+          />
           {onSale && (
-            <span className="absolute top-6 left-6 bg-red-500 text-white text-xs font-extrabold px-3 py-1.5 rounded-full">-{off}% OFF</span>
+            <span className="absolute top-6 left-6 bg-red-500 text-white text-xs font-extrabold px-3 py-1.5 rounded-full shadow-md">-{off}% OFF</span>
           )}
         </div>
 
