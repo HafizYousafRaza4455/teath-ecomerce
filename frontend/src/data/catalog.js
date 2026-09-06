@@ -42,7 +42,7 @@ export const PRODUCTS_DATA = [
     is_featured: true,
     avg_rating: 4.8,
     review_count: 184,
-    image: '/images/kit-deluxe.jpg',
+    image: '/images/prod-deluxe-kit.jpg',
     description: 'Wireless charging LED system plus soothing desensitizing gel, 4 extra whitening syringes, and a water-resistant magnetic travel case. The ultimate smile makeover.',
   },
   {
@@ -60,7 +60,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.7,
     review_count: 96,
-    image: '/images/kit-deluxe.jpg',
+    image: '/images/prod-rapid-kit.jpg',
     description: 'High-potency formulation designed for quick touch-ups before big events or weddings. Visible transformation in only 3 days with zero downtime.',
   },
   {
@@ -78,7 +78,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.9,
     review_count: 132,
-    image: '/images/kit-deluxe.jpg',
+    image: '/images/prod-sensitive-kit.jpg',
     description: 'Specially engineered for sensitive enamel. Features PAP+ active ingredient and potassium nitrate to eliminate nerve sensitivity while delivering bright results.',
   },
   {
@@ -96,7 +96,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.6,
     review_count: 75,
-    image: '/images/kit-deluxe.jpg',
+    image: '/images/prod-charcoal-kit.jpg',
     description: 'Organic coconut activated charcoal gel paired with our dual-spectrum blue LED light to bind and lift deep wine, coffee, and tobacco stains.',
   },
   {
@@ -114,7 +114,7 @@ export const PRODUCTS_DATA = [
     is_featured: true,
     avg_rating: 5.0,
     review_count: 62,
-    image: '/images/kit-deluxe.jpg',
+    image: '/images/prod-platinum-kit.jpg',
     description: 'Includes daytime 15-minute express kit and nighttime overnight slow-release whitening strips for round-the-clock brightening.',
   },
   {
@@ -132,7 +132,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.9,
     review_count: 88,
-    image: '/images/kit-deluxe.jpg',
+    image: '/images/prod-couples-kit.jpg',
     description: 'Double the trays, double the LED lights, and 6 syringes of gel. Whiten together at home with 2 full sets for the price of one and a half.',
   },
   {
@@ -150,7 +150,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.7,
     review_count: 51,
-    image: '/images/kit-deluxe.jpg',
+    image: '/images/prod-travel-pod.jpg',
     description: 'Compact TSA-approved pocket case with mini rechargeable LED mouthpiece and 3 single-dose twist pods.',
   },
   {
@@ -168,7 +168,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.5,
     review_count: 43,
-    image: '/images/kit-deluxe.jpg',
+    image: '/images/prod-botanical-kit.jpg',
     description: '100% peroxide-free botanical formula enriched with pomegranate seed, chamomile, and aloe vera for naturally radiant teeth.',
   },
   {
@@ -186,7 +186,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 5.0,
     review_count: 39,
-    image: '/images/kit-deluxe.jpg',
+    image: '/images/prod-vip-box.jpg',
     description: 'Our most comprehensive collection: Wireless LED light, 6 gel syringes, color-correcting serum, 28 strips, whitening pen, and velvet case.',
   },
 
@@ -242,7 +242,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.8,
     review_count: 87,
-    image: '/images/led.jpg',
+    image: '/images/prod-wireless-mouthpiece.jpg',
     description: 'Medical-grade silicone mouthpiece equipped with 32 micro-LEDs covering upper and lower arches simultaneously.',
   },
   {
@@ -260,7 +260,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.9,
     review_count: 53,
-    image: '/images/led-uv.jpg',
+    image: '/images/prod-red-light.jpg',
     description: 'Features alternating blue light for teeth whitening and 630nm near-infrared red light for gum cell repair and circulation.',
   },
   {
@@ -278,7 +278,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.4,
     review_count: 110,
-    image: '/images/led.jpg',
+    image: '/images/prod-usb-mini-led.jpg',
     description: 'No batteries required. Plugs directly into iPhone, USB-C Android, or laptop for quick whitening sessions anywhere.',
   },
   {
@@ -296,7 +296,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.6,
     review_count: 67,
-    image: '/images/led.jpg',
+    image: '/images/prod-touch-timer.jpg',
     description: 'Smart capacitive touch sensor with automatic 10, 15, and 20 minute auto-shutoff beep timers.',
   },
   {
@@ -314,7 +314,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.9,
     review_count: 38,
-    image: '/images/led-uv.jpg',
+    image: '/images/prod-ortho-led.jpg',
     description: 'Wide-angle arc designed specifically to whiten around clear aligners and retainers safely.',
   },
   {
@@ -332,7 +332,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.7,
     review_count: 29,
-    image: '/images/led.jpg',
+    image: '/images/prod-led-dock.jpg',
     description: 'Sleek inductive charging base with USB-C braided cable for all Sparkle Deluxe wireless LED mouthpieces.',
   },
 
@@ -388,7 +388,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.7,
     review_count: 94,
-    image: '/images/strips.jpg',
+    image: '/images/prod-strips-charcoal.jpg',
     description: 'No-slip dry-grip technology that seals securely over teeth without slipping while you talk or drink water.',
   },
   {
@@ -406,7 +406,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.8,
     review_count: 140,
-    image: '/images/strips.jpg',
+    image: '/images/prod-strips-1hr.jpg',
     description: 'Fast-action formula reveals whiter teeth in just 60 minutes for last-minute date nights or interviews.',
   },
   {
@@ -424,7 +424,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.6,
     review_count: 82,
-    image: '/images/strips-sensitive.jpg',
+    image: '/images/prod-strips-coconut.jpg',
     description: 'Organic cold-pressed virgin coconut oil with spearmint delivers natural pulling power and lasting fresh breath.',
   },
   {
@@ -442,7 +442,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.7,
     review_count: 59,
-    image: '/images/strips.jpg',
+    image: '/images/prod-strips-overnight.jpg',
     description: 'Slow-dissolving micro-gel strips designed to work peacefully while you sleep. Leaves zero sticky residue in the morning.',
   },
   {
@@ -460,7 +460,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.9,
     review_count: 48,
-    image: '/images/strips-sensitive.jpg',
+    image: '/images/prod-strips-teens.jpg',
     description: 'Ultra-mild formulation tested for young adult enamel. Removes brace stains safely without harsh bleaching agents.',
   },
   {
@@ -478,7 +478,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.8,
     review_count: 172,
-    image: '/images/strips.jpg',
+    image: '/images/prod-strips-smokers.jpg',
     description: 'Targeted formula containing micro-cleansing bubbles that penetrate deep microscopic pores in tooth enamel.',
   },
   {
@@ -496,7 +496,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 5.0,
     review_count: 85,
-    image: '/images/strips.jpg',
+    image: '/images/prod-strips-value.jpg',
     description: 'Full year of maintenance treatments in one economical pack. Never let stains dull your smile again.',
   },
 
@@ -552,7 +552,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.8,
     review_count: 198,
-    image: '/images/gel.jpg',
+    image: '/images/prod-cp-refills.jpg',
     description: 'High-yield 5ml syringes compatible with all dental trays. Over 30 full-mouth bleaching treatments.',
   },
   {
@@ -570,7 +570,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.9,
     review_count: 86,
-    image: '/images/pen.jpg',
+    image: '/images/prod-pap-pen-trio.jpg',
     description: 'Three precision pens powered by Phthalimidoperoxycaproic Acid (PAP+). No sensitivity, no enamel erosion.',
   },
   {
@@ -588,7 +588,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.6,
     review_count: 63,
-    image: '/images/gel.jpg',
+    image: '/images/prod-night-gel-44.jpg',
     description: 'Maximum permitted non-prescription strength for stubborn nicotine and tetracycline stains.',
   },
   {
@@ -606,7 +606,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.9,
     review_count: 92,
-    image: '/images/pen.jpg',
+    image: '/images/prod-hydroxyapatite-pen.jpg',
     description: 'Medical nano-hydroxyapatite pen that rebuilds micro-fissures in enamel while adding a glass-like sheen.',
   },
   {
@@ -624,7 +624,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.7,
     review_count: 77,
-    image: '/images/pen.jpg',
+    image: '/images/prod-instant-glow-pen.jpg',
     description: 'Color science pen utilizing optical purple hues to neutralize yellow undertones within 30 seconds of application.',
   },
   {
@@ -642,7 +642,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.8,
     review_count: 56,
-    image: '/images/gel.jpg',
+    image: '/images/prod-mint-flavor-gel.jpg',
     description: 'Infused with cooling peppermint and xylitol to keep mouth sweet and fresh throughout treatment.',
   },
   {
@@ -660,7 +660,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.8,
     review_count: 42,
-    image: '/images/pen.jpg',
+    image: '/images/prod-micro-tip-pen.jpg',
     description: 'Extra-fine 1mm silicone applicator to reach between teeth, crowded areas, and dental hardware.',
   },
 
@@ -698,7 +698,7 @@ export const PRODUCTS_DATA = [
     is_featured: true,
     avg_rating: 4.7,
     review_count: 320,
-    image: '/images/toothpaste.jpg',
+    image: '/images/prod-v34-purple-serum.jpg',
     description: 'Non-invasive optical brightening treatment. Counteracts different yellow tones in your teeth to temporarily conceal stains.',
   },
   {
@@ -716,7 +716,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.9,
     review_count: 145,
-    image: '/images/toothpaste.jpg',
+    image: '/images/prod-nano-ha-toothpaste.jpg',
     description: 'Fluoride-free biomimetic formula that deposits mineral building blocks directly into enamel tubules.',
   },
   {
@@ -734,7 +734,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.6,
     review_count: 180,
-    image: '/images/toothpaste.jpg',
+    image: '/images/prod-charcoal-powder.jpg',
     description: 'Ultra-fine bentonite clay and steam-activated charcoal powder for weekly stain detoxing.',
   },
   {
@@ -752,7 +752,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.8,
     review_count: 67,
-    image: '/images/toothpaste.jpg',
+    image: '/images/prod-herbal-enzyme-paste.jpg',
     description: 'Papain and bromelain fruit enzymes break down protein pellicle layer where stains adhere.',
   },
   {
@@ -770,7 +770,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.5,
     review_count: 135,
-    image: '/images/toothpaste.jpg',
+    image: '/images/prod-baking-soda-paste.jpg',
     description: 'Time-tested micro-baking soda formula neutralizes harmful plaque acids while whitening enamel gently.',
   },
   {
@@ -788,7 +788,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.9,
     review_count: 58,
-    image: '/images/toothpaste.jpg',
+    image: '/images/prod-probiotic-paste.jpg',
     description: 'Enriched with live beneficial probiotics (Lactobacillus salivarius) to support healthy gums and long-term breath freshness.',
   },
   {
@@ -806,7 +806,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 5.0,
     review_count: 104,
-    image: '/images/toothpaste.jpg',
+    image: '/images/prod-tube-duo.jpg',
     description: 'Morning paste guards against daily coffee and tea stains; evening paste remineralizes enamel while you rest.',
   },
 
@@ -826,7 +826,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.8,
     review_count: 160,
-    image: '/images/kit-deluxe.jpg',
+    image: '/images/prod-custom-trays.jpg',
     description: 'Boil-and-bite customizable mouth trays for an airtight snug fit that holds whitening gel securely in place.',
   },
   {
@@ -844,7 +844,7 @@ export const PRODUCTS_DATA = [
     is_featured: true,
     avg_rating: 4.9,
     review_count: 210,
-    image: '/images/led.jpg',
+    image: '/images/prod-sonic-toothbrush.jpg',
     description: '40,000 VPM sonic vibrations with DuPont bristles and blue LED brush head to polish teeth whiter every day.',
   },
   {
@@ -862,7 +862,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.9,
     review_count: 88,
-    image: '/images/led-uv.jpg',
+    image: '/images/prod-uv-sanitizer-case.jpg',
     description: 'Eliminates 99.9% of bacteria from whitening trays, nightguards, and aligners in just 3 minutes with UV-C light.',
   },
   {
@@ -880,7 +880,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.7,
     review_count: 65,
-    image: '/images/kit-deluxe.jpg',
+    image: '/images/prod-shade-guide.jpg',
     description: 'Professional 3D acrylic shade guide to accurately measure and track your smile transformation stage by stage.',
   },
   {
@@ -898,7 +898,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.8,
     review_count: 140,
-    image: '/images/toothpaste.jpg',
+    image: '/images/prod-bamboo-brushes.jpg',
     description: '100% biodegradable Moso bamboo handles with charcoal-infused tapered bristles for gentle gum care.',
   },
   {
@@ -916,7 +916,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.8,
     review_count: 98,
-    image: '/images/gel.jpg',
+    image: '/images/prod-enamel-mouthwash.jpg',
     description: 'Alcohol-free post-whitening rinse that seals porous enamel and prevents new stains from coffee and tea.',
   },
   {
@@ -934,7 +934,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.6,
     review_count: 45,
-    image: '/images/kit-deluxe.jpg',
+    image: '/images/prod-velvet-pouch.jpg',
     description: 'Water-resistant luxury travel bag designed to fit whitening pens, LED device, and charging cable neatly.',
   },
   {
@@ -952,7 +952,7 @@ export const PRODUCTS_DATA = [
     is_featured: false,
     avg_rating: 4.9,
     review_count: 220,
-    image: '/images/toothpaste.jpg',
+    image: '/images/prod-tongue-scraper.jpg',
     description: 'Surgical-grade medical stainless steel tongue scraper that lifts bacteria and enhances total mouth cleanliness.',
   },
 ]
