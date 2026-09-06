@@ -27,10 +27,6 @@ export default function ProductDetail() {
   const off = onSale ? Math.round((1 - product.effective_price / product.price) * 100) : 0
 
   const handleAdd = async () => {
-    if (!user) {
-      toast.info('Login to add items to your cart')
-      return navigate('/login')
-    }
     setAdding(true)
     try {
       await addItem(product.id, qty)

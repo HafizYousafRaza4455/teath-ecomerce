@@ -10,18 +10,7 @@ export default function Cart() {
   const [code, setCode] = useState('')
   const [error, setError] = useState('')
 
-  if (!localStorage.getItem('access')) {
-    return (
-      <div className="max-w-md mx-auto text-center py-28">
-        <div className="text-6xl mb-5">🛒</div>
-        <h2 className="font-display text-2xl font-extrabold text-gray-900">Login to view your cart</h2>
-        <p className="text-gray-400 text-sm mt-2">Your items are saved to your account.</p>
-        <Link to="/login" className="inline-block mt-6 bg-brand-600 text-white px-10 py-3.5 rounded-full font-bold hover:bg-brand-700 transition">Login</Link>
-      </div>
-    )
-  }
-
-  if (!cart || cart.items.length === 0) {
+  if (!cart || !cart.items || cart.items.length === 0) {
     return (
       <div className="max-w-md mx-auto text-center py-28">
         <div className="text-6xl mb-5">🛒</div>

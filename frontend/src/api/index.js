@@ -131,7 +131,12 @@ export const admin = {
         items: [{ id: 6, product_name: 'Ultraviolet LED Light Pro (Dual Wave)', quantity: 1, price: '32.99', total_price: '32.99' }]
       },
     ]
-    return { data: status ? mockOrders.filter((o) => o.status === status) : mockOrders }
+    let guestOrders = []
+    try {
+      guestOrders = JSON.parse(localStorage.getItem('sparkle_guest_orders') || '[]')
+    } catch {}
+    const allOrders = [...guestOrders, ...mockOrders]
+    return { data: status ? allOrders.filter((o) => o.status === status) : allOrders }
   },
   updateOrderStatus: (id, status) => api.patch(`/orders/admin/orders/${id}/status/`, { status }).catch(() => ({ data: { id, status } })),
   getProducts: async () => {
